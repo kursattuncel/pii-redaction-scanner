@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pii-redaction-scanner"
+version = "0.1.0"
+description = "PII Redaction Scanner"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Yusuf Kursat Tuncel"}]
+keywords = ["cybersecurity", "security", "portfolio", "defensive-security"]
+
+[project.scripts]
+pii-redaction-scanner = "pii_redaction_scanner.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
