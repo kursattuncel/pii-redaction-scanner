@@ -19,6 +19,7 @@ Analysts and instructors need a safe way to sanitize sample logs before sharing 
 ## Quickstart
 
 ```bash
+python -m pip install -e .
 python -m unittest discover -s tests
 python -m pii_redaction_scanner examples/sample.log --redact
 ```
